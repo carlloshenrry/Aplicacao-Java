@@ -16,51 +16,15 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        // Carro
-        carros volks= new carros();
-        volks.setCorCarroceria("Branco"); 
-        volks.setNomeFabricante("Volkswagem");
-        volks.setNomeModelo("Golf GTI Aro 20");   
-        volks.setNumeroPortas(2);
-        volks.setQuantidadePassageiros(5);  
-        volks.setQuantidadeRodas(4);
-        volks.setQuilometragem(100000);
-        volks.setPortaAberta(true);
-        
-        //Condutor:
-        Condutor piloto= new Condutor();
-        piloto.setIdadeCondutor(30);
-        piloto.setNacionalidadeCondutor("Alemão");
-        piloto.setNivelHabilidade(100);
-        piloto.setNomeCondutor("Shummacher");
-        piloto.setTipoCondutor("Piloto de F1");
+        Passageiro passageiro1=new Passageiro("Carlos",20,"Br",3452845,"Brasil",35);
+        passageiro1.pesoestimado(50);
+        passageiro1.imprimirParametros();
+        passageiro1.imprimirParametros2();
         
         
-        //Print Carro
-        System.out.println("Cor da Carroceria: " + volks.corCarroceria + "\n");
-        System.out.println("Fabricante: " + volks.nomeFabricante + "\n");
-        System.out.println("Modelo: " + volks.nomeModelo + "\n");
-        System.out.println("Portas: " + volks.numeroPortas + "\n");
-        System.out.println("Num de Passageiros: " + volks.quantidadePassageiros + "\n");
-        System.out.println("Numero de rodas: " + volks.quantidadeRodas + "\n");
-        System.out.println("Quilometragem: " + volks.Quilometragem + "\n");
         
-                if(volks.portaAberta == true)
-                {
-            System.out.println("Porta Aberta \n \n");
-                }
-                else
-                {
-            System.out.println("Porta fechada \n \n");
-                }
         
-        //Print Condutor
-        System.out.println("Piloto: " + piloto.nomeCondutor + "\n");
-        System.out.println("Idade: " + piloto.idadeCondutor + "\n");
-        System.out.println("Nacionalidade: " + piloto.nacionalidadeCondutor + "\n");
-        System.out.println("Tipo de Piloto: " + piloto.tipoCondutor + "\n");
-        System.out.println("Nivel de Habilidade: " + piloto.nivelHabilidade + "\n ");
-        
-    }   
+    }
+    
     
 }
